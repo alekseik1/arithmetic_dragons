@@ -19,6 +19,11 @@ def generate_dragon_list(enemy_number):
 
 
 class Dragon(Enemy):
+
+    _color = 'NonColored'
+    __answer = 'Я повар!'
+    __quest = 'Какова твоя профессия?'
+
     def set_answer(self, answer):
         self.__answer = answer
 
