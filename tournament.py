@@ -12,6 +12,8 @@ def annoying_input_int(message =''):
                 return answer
             elif answer.lower() == 'да' or answer.lower() == 'нет':
                 return answer
+            elif ',' in answer:
+                return answer
             answer = int(answer)
         except ValueError:
             print('Вы ввели недопустимые символы')
@@ -39,7 +41,7 @@ def game_tournament(hero, dragon_list):
         print('Поздравляем! Вы победили!')
         print('Ваш накопленный опыт:', hero._experience)
     else:
-        print('К сожалению, Вы проиграли...')
+        print('Вы проиграли...')
 
 def start_game():
 

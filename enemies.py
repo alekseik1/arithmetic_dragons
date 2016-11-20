@@ -87,7 +87,7 @@ class Povar(Dragon):
 
 class Troll_gen(Dragon):
     def __init__(self):
-        self._heath = 100
+        self._health = 100
         self._attack = 10
         self._color = 'Тролль-угадайка'
 
@@ -140,17 +140,19 @@ class Troll_razlogi_chislo_ples(Dragon):
                 d += 1
         if n > 1:
             Ans.append(n)
+        Ans.sort()
         res = ''
         for i in Ans:
-            res += i
+            res += str(i)
             res += ','
-        res = res[:-2]
+        res = res[0:-1]
         return res
 
     def question(self):
         x = randint(1, 100)
-        self.__quest = 'Разложи мне число, голубчик, и напиши множители через запятую в порядке возрастания: ' + x
+        self.__quest = 'Разложи мне число, голубчик, и напиши множители через запятую в порядке возрастания: ' + str(x)
         self.set_answer(self.get_answer(x))
+        print(self.get_answer(x))
         return self.__quest
 
 
