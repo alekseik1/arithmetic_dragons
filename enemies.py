@@ -152,7 +152,7 @@ class Troll_razlogi_chislo_ples(Dragon):
         x = randint(1, 100)
         self.__quest = 'Разложи мне число, голубчик, и напиши множители через запятую в порядке возрастания: ' + str(x)
         self.set_answer(self.get_answer(x))
-        print(self.get_answer(x))
+        #print(self.get_answer(x))
         return self.__quest
 
 
