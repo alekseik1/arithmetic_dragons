@@ -61,7 +61,7 @@ class BlackDragon(Dragon):
     def __init__(self):
         self._health = 200
         self._attack = 10
-        self._color = 'зелёный'
+        self._color = 'черный'
 
     def question(self):
         x = randint(1, 100)
@@ -70,4 +70,15 @@ class BlackDragon(Dragon):
         self.set_answer(x * y)
         return self.__quest
 
-enemy_types = [GreenDragon, RedDragon, BlackDragon]
+class Povar(Dragon):
+    def __init__(self):
+        self._health = 1
+        self._attack = 1000
+        self._color = 'Повар'
+
+    def question(self):
+        self.__quest = "Какова моя профессия?"
+        self.set_answer('повар')
+        return self.__quest
+
+enemy_types = [GreenDragon, RedDragon, BlackDragon, Povar]
