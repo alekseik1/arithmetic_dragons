@@ -157,3 +157,4 @@ class Troll_razlogi_chislo_ples(Dragon):
 
 
 enemy_types = [GreenDragon, RedDragon, BlackDragon, Povar, Troll_gen, Troll_easy_of_chislo, Troll_razlogi_chislo_ples]
+#enemy_types = [Povar]

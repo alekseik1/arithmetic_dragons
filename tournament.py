@@ -32,6 +32,8 @@ def game_tournament(hero, dragon_list):
                 print('Верно! \n** дракон кричит от боли **')
             else:
                 dragon.attack(hero)
+                if dragon._color == 'Повар':
+                    print('Не-е-ет! Моя главная профессия - ПОВАР!!! (Разразился смехом)')
                 print('Ошибка! \n** вам нанесён удар... **')
         if dragon.is_alive():
             break
